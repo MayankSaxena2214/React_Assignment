@@ -1,0 +1,56 @@
+.card{
+    width: 322px;
+    height: 412px;
+    box-shadow:0px 0px 2px rgb(171, 168, 168);
+    color:blue;
+    border-width: 2px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-direction: column;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card-image img{
+    width: 198px;
+    height: 198px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.card-content-desc{
+    color:rgb(49, 48, 48);
+}
+.card-content-price{
+    color:rgb(78, 78, 200)
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.card-btn button{
+    width:180px;
+    height: 56px;
+    border-radius: 18px;
+    border:1px solid blue;
+    background: transparent;
+
+    &:hover{
+        background: linear-gradient(
+        135deg, /* Angle of the gradient */
+        rgba(101, 145, 234, 0.5), /* Light sky blue with opacity */
+        rgba(135, 206, 250, 0.7), /* Light Sky Blue with more opacity */
+        rgba(0, 191, 255, 0.5) /* Deep Sky Blue with opacity */
+    );
+    }
+}

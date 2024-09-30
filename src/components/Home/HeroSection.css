@@ -1,0 +1,264 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    @media(max-width:768px){
+        height:auto;
+        width:100%;
+        position: relative;
+    }
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(135deg, #3a8dff, #a5c9e8, #ffb3d1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 75% 60%, 50% 70%, 0% calc(100% - 150px));
+    z-index: 1;
+    @media(max-width:768px){
+        
+        
+    }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2; /* Above the clipped background */
+}
+
+.image-container {
+    height: 554px;
+    width: 569px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensures it stays above other content */
+    position: relative;
+    @media(max-width:768px){
+        width:100%;
+        margin-top: 40px;
+    }
+}
+
+.hero-content {
+    height: 554px;
+    width: 600px;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+
+    @media(max-width:768px){
+        height:80%;
+        width:90%;
+        margin-bottom: 140px;
+
+    }
+}
+.heading-content{
+    margin-top: 80px;
+    font-weight: 400;
+}
+.heading-content h2{
+    font-size: 30px;
+    color:white;
+    font-weight: 700;
+    background: transparent;
+    line-height: 20px;
+    @media(max-width:768px){
+        font-size: 15px;
+    }
+}
+.heading-content h1{
+    font-size: 40px;
+    color:white;
+    background: transparent;
+    line-height: 20px;
+    @media(max-width:768px){
+        font-size: 27px;
+        
+    }
+}
+.para-content{
+    width: 400px;
+    height: 72px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+
+    @media(max-width:768px){
+        height:80%;
+        width:90%;
+    }
+}
+.button-content{
+    width:283px;
+    height: 56px;
+    margin-top: 30px;
+    @media(max-width:768px){
+        height:80%;
+        width:90%;
+        margin-top: 10px;
+    }
+}
+.shop-now-btn{
+    height: 56px;
+    width: 180px;
+    border-radius: 18px;
+    border:none;
+    font-size: 1.4rem;
+    color:#79acf4;
+
+    &:hover{
+        color:white;
+        background-color: blue;
+    }
+}
+.about-us-btn{
+    background: transparent;
+    border:none;
+    margin-left:15px;
+}
+.image-container{
+    display: flex;
+    @media(max-width:768px){
+        flex-direction: column;
+        margin-top: 50px;
+        height:90%;
+        width: 90%;
+        padding: 10px;
+        box-shadow: 2px 2px 4px black;
+    }
+
+}
+.notify-type{
+    background-color:#8A93E5;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 97px;
+    height: 40px;
+    text-align: center;
+    color:white;
+    margin-top: 80px;
+    padding-top: 20px;
+    @media(max-width:768px){
+        height:80%;
+        text-align: center;
+        padding-bottom: 10px;
+        width:20%;
+    }
+}
+.card-type{
+    margin-top: 40px;
+    @media(max-width:768px){
+        height:80%;
+        width:90%;
+    }
+}
+.hero-card-image img{
+    height: 362px;
+    width: 362px;
+    @media(max-width:768px){
+        height: 80%;
+        width: 80%;
+    }
+}
+.card-image-desc-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 50px;
+}
+.card-image-desc{
+    color:black;
+    opacity: 0.7;
+
+    span{
+        color:blue
+    }
+    @media(max-width:768px){
+        margin-bottom: 20px;
+    }
+}
+.carosoul{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    @media(max-width:768px){
+        display: flex;
+        padding: 20px;
+        margin-left: 50px;
+        justify-content: start;
+        align-items: center;
+    }
+}
+.carosoul-elements-container{
+    width: 254px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+}
+.left-arrow{
+    height: 24px;
+    width: 24px;
+    background-color: #8A93E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-arrow{
+    height: 24px;
+    width: 24px;
+    background-color: #8A93E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini-circle{
+    width: 158px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mini-circle div{
+    width: 14px;
+    height: 14px;
+    background-color: #bdc2ec;
+    border-radius: 50%;
+}
+.left-most-mini-cirlce{
+    background-color: #5f6ce9;
+}
+.scroll-down-contaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.scroll-down-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.scorll-down-icons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+@media(max-width:768px){
+    .hero-container{
+        flex-direction: column;
+    }
+}

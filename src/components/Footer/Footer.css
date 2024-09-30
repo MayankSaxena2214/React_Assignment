@@ -1,0 +1,55 @@
+.footer{
+    height: 269px;
+    background-color:#0A294DCC;
+    position:relative;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    @media(max-width:768px){
+        height:100px;
+        width:100wh;
+    }
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.footer-icon{
+    font-size: 30px;
+}
+.insta{
+    color:red;
+}
+.whatsapp{
+    color:greenyellow;
+}
+.github{
+    color:white;
+}
+.phone{
+    color:blue;
+}
+.twitter{
+    color:white;
+}
+.address-icon{
+    color:white;
+    font-size: 20px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+    div{
+        color:white;
+    }
+}

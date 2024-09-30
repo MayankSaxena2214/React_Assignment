@@ -1,0 +1,85 @@
+.all-products-container{
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+    top:10px;
+    h1{
+        text-align: center;
+        color:rgb(73, 73, 121);
+        font-size: 2.5rem;
+    }
+    @media(max-width:768px){
+        height:auto;
+        width:90%;
+    }
+}
+.css-menus{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:20px;
+}
+.css-menu1 label{
+    color:rgb(192, 192, 248);
+    font-size: 0.9rem;
+}
+.css-menu2 label{
+    color:rgb(192, 192, 248);
+    font-size: 0.9rem;
+}
+.css-menu1 select{
+    border:none;
+    color:rgb(76, 76, 146);
+    font-size: 1rem;
+}
+.css-menu2 select{
+    border:none;
+    color:rgb(76, 76, 146);
+    font-size: 1rem;
+}
+.all-products-card{
+    width: 1440px;
+    height: 1084px;
+    margin-top: 40px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media(max-width:768px){
+        flex-direction: column;
+        width:auto;
+        height: auto;
+        gap:10px;
+    }
+}
+.view-all-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:768px){
+        margin-top: 100px;
+    }
+}
+.view-all-btn button{
+    position: relative;
+    bottom: 60px;
+    width:134px;
+    height: 48px;
+    border-radius: 18px;
+    border:1px solid blue;
+    background: transparent;
+    @media(max-width:768px){
+        
+    }
+
+    &:hover{
+        background: linear-gradient(
+        135deg, /* Angle of the gradient */
+        rgba(101, 145, 234, 0.5), /* Light sky blue with opacity */
+        rgba(135, 206, 250, 0.7), /* Light Sky Blue with more opacity */
+        rgba(0, 191, 255, 0.5) /* Deep Sky Blue with opacity */
+    );
+    }
+}
